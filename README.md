@@ -1,24 +1,36 @@
-# README
+# FAQ Accordion Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple FAQ (Frequently Asked Questions) accordion feature built with Ruby on Rails. The accordion allows users to click on each question to reveal or hide the answer, with an arrow that toggles between up (▲) and down (▼) when expanding or collapsing an item.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Accordion-style FAQ section.
+- Toggle arrow to indicate the expansion/collapse of each question.
+- Simple and clean UI using HTML, CSS, and JavaScript.
+- Built with Ruby on Rails.
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+Before you begin, ensure you have the following installed:
 
-* Database creation
+- **Ruby** (>= 2.7)
+- **Rails** (>= 6.1)
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+### 1. Clone the Repository
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone this repository to your local machine:
 
-* Deployment instructions
+```
+git clone https://github.com/akhil2109kumar/accordion_app.git
+cd accordion_app
+```
 
-* ...
+## Run Locally
+
+To run the app, use the following command:
+
+```
+rails s
+```
