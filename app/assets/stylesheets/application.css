@@ -1,15 +1,156 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  font-family: Helvetica;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 10px;
+}
+
+
+/* custom */
+
+
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 50px;
+  
+  li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    
+    &.active {
+      h3 {
+        width: 100%;
+        background: linear-gradient(90deg, rgba(252,193,16,1) 0%, rgba(228,176,18,1) 100%);
+        color: #fff;
+        border-color: #fff;
+        
+        &:after {
+          transform: rotate(0deg);
+        color: #fff;
+        top: 0px;
+
+
+
+
+        }
+      }
+    }
+    
+    h3 {
+      font-weight: 300;
+      position: relative;
+      display: block;
+      width: 50%;
+      height: auto;
+      padding: 0 0 0 0;
+      margin: 0;
+      font-size: 24x;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      padding: 15px;
+      border-bottom: 2px solid #111;
+      box-sizing: border-box;
+      &:hover {
+        background: linear-gradient(90deg, rgba(252,193,16,1) 0%, rgba(228,176,18,1) 100%);
+        color: #fff;
+        border-color: #fff;
+        &:after {
+          color: #fff;
+        
+        }
+      }
+      
+      &:after {
+        content: "→";
+        font-family: "material-design-iconic-font";
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #ffcc00;
+
+        transition: all 0.3s ease-in-out;
+        font-size: 36px;
+        transform: rotate(90deg);
+
+      }
+    }
+    
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      
+      p {
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+        line-height: 150%;
+        margin: 0 0 15px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+
+.tab-menu ul { margin:0; width: 80%; padding:0; list-style:none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.tab-menu ul li {padding: 0 !important;margin: 0 !important; -ms-flex-preferred-size: 0; flex-basis: 0; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; text-align:center; }
+.tab-menu ul li a { color: #ccc; letter-spacing: 0.44px;font-weight:bold; display:inline-block; padding:18px 26px; display:block; text-decoration:none; transition:0.5s all; padding-left: 0; text-align: left;}
+.tab-menu ul li a:hover { color:#111; text-decoration:none; }
+.tab-menu ul li a.active {color:#111; text-decoration:none; }
+.tab-box { display:none; overflow: auto;
+  height: 300px;
+position: relative; }
+ 
+.tab-teaser {width:100%; margin:0 auto;padding: 20px; position: relative;}
+.tab-teaser::after {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+  height: 150px;
+  content: '';
+  bottom: 0;
+  left: 0;
+  display: block;
+    }
+.tab-main-box {margin-top:-2px;
+ }
+.tab-box .tab-box-inner {
+flex: 1 40%;
+max-width: 40%;
+font-size: 14px;
+
+}
+.tab-box .tab-box-inner p {
+  margin: 0 !important;
+}
+.tab-box .tab-box-inner strong {
+  margin: 10px 0;
+}
+
